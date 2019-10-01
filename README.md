@@ -20,7 +20,7 @@
 ```getContactsMatchingString (searchString, callback)```
 
 ## Example
-##### Needed to check whether do you have permission to access contacts before using the api. checkPermission or requestPermission method can be used to check.
+##### Needed to check whether do you have permission to access contacts before using the api. ```checkPermission``` or ```requestPermission``` method can be used to check.([https://facebook.github.io/react-native/docs/permissionsandroid.html])
 ```
 Contacts.getContactsMatchingString(letter,(err, contacts) => {
   if (err) 
