@@ -9,6 +9,13 @@
 ### Autolinking (>= 0.60)
 ###### react-native link @developers-arnest/reactnative-contacts-android
 
+
+## Permissions
+#### Android requires permission to read or write contacts.So add permissions in AndroidManifest.xml'
+```
+<uses-permission android:name="android.permission.READ_PROFILE" />
+```
+
 ## API
 ```getContactsMatchingString (searchString, callback)```
 
@@ -19,7 +26,7 @@ Contacts.getContactsMatchingString(letter,(err, contacts) => {
   {
     throw err;
   }
-  \\ the returned contact list
+  // the returned contact list
   let myContacts  = contacts
  }
 ```     
