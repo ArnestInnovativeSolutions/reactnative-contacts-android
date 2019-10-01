@@ -11,7 +11,7 @@
 
 
 ## Permissions
-#### Android requires permission to read or write contacts.So add permissions in AndroidManifest.xml'
+#### Android requires permission to read or write contacts.So add permissions in AndroidManifest.xml
 ```
 <uses-permission android:name="android.permission.READ_PROFILE" />
 ```
@@ -20,6 +20,7 @@
 ```getContactsMatchingString (searchString, callback)```
 
 ## Example
+##### Needed to check whether do you have permission to access contacts before using the api. checkPermission or requestPermission method can be used to check.
 ```
 Contacts.getContactsMatchingString(letter,(err, contacts) => {
   if (err) 
